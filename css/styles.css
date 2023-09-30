@@ -1,37 +1,54 @@
 
-*{
+
+* {
     font-family: 'Electrolize', sans-serif;
 }
 
-html body {
-    width: 100vw;
-    height: 100vh;
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(78, 162, 231);
+    background-image: url(../img/saw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .backgroundHome {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
-.nombre{
+.nombre {
     font-family: 'Bungee Shade', cursive;
     font-size: 1.6em;
-}
+    color: rgb(216, 8, 8);
+    text-shadow: 2px 2px 2px rgb(231, 235, 15), -2px -2px 2px rgb(5, 4, 6);    
+  }
 
-.gameButton{
+.gameButton {
     height: 2.5em;
-    border-radius: 1em;
-    background-color: rgb(123, 51, 239);
-    border: 0.2em groove white;
-    color: white;
+    border-radius: 3em;
+    background-color: rgb(216, 8, 8);
+    border: 0.6em groove  rgb(216, 8, 8);
+    color: rgb(10, 8, 8);
     font-size: x-large;
-    text-decoration: none;
+    text-decoration:double;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-image: url(../img/button.jpg);
 }
 
+.gameButton:hover {
+    color: red;
+}
+.name {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 5em;
+    color: rgb(216, 8, 8);
+    text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
+}
