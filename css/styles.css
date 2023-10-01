@@ -52,7 +52,7 @@ html, body {
     color: rgb(216, 8, 8);
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
 }
-.row{
+.row {
     margin: 0 !important;
 }
 
@@ -67,7 +67,7 @@ html, body {
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
 }
 
-.texto-about{
+.texto-about {
     font-family: 'Bungee Shade';
     font-size: 1.6em;
     text-align: start;
@@ -75,16 +75,16 @@ html, body {
     color: white;
 }
 
-.about{
+.about {
     border-right-color: 2em, solid red;
     width: 55em;    
 }
-#begin{
+#begin {
     color: red;
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
     cursor: pointer;
 }
-.exit{
+.exit {
     color: rgb(6, 0, 0);
     text-shadow: 2px 2px 2px rgb(6, 0, 0), -2px -2px 2px rgb(8, 8, 2);
     cursor: pointer;
