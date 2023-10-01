@@ -1,12 +1,13 @@
 
-
 * {
     font-family: 'Electrolize', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 98vh;
     margin: 0;
     padding: 0;
     background-image: url(../img/saw.jpg);
@@ -34,7 +35,6 @@ html, body {
     border: 0.6em groove  rgb(216, 8, 8);
     color: rgb(10, 8, 8);
     font-size: x-large;
-    text-decoration:double;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -51,4 +51,48 @@ html, body {
     font-size: 5em;
     color: rgb(216, 8, 8);
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
+}
+.row{
+    margin: 0 !important;
+}
+
+.play {
+    align-items: start;
+    margin-inline-start: 2em;
+    justify-content: start;
+    display: flex;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 3em;
+    color: red;
+    text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
+}
+
+.texto-about{
+    font-family: 'Bungee Shade';
+    font-size: 1.6em;
+    text-align: start;
+    margin: 2em;
+    color: white;
+}
+
+.about{
+    border-right-color: 2em, solid red;
+    width: 55em;    
+}
+#begin{
+    color: red;
+    text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
+    cursor: pointer;
+}
+.exit{
+    color: rgb(6, 0, 0);
+    text-shadow: 2px 2px 2px rgb(6, 0, 0), -2px -2px 2px rgb(8, 8, 2);
+    cursor: pointer;
+    align-items: end;
+    justify-content: end;
+    margin-left: 2em;
+    height: 10em;
+    width: 10em;
+    margin-top: 10em;
+    font-size: 2em;
 }
