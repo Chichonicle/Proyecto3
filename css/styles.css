@@ -45,7 +45,13 @@ html, body {
 
 .gameButton:hover {
     color: red;
+    transition: 2s;
+    animation: slidebg 4s linear infinite;
 }
+@keyframes slidebg {
+    to { background-position:20vw; }
+}
+
 .name {
     font-family: 'Bungee Shade', cursive;
     font-size: 5em;
@@ -90,9 +96,33 @@ html, body {
     cursor: pointer;
     align-items: end;
     justify-content: end;
-    margin-left: 2em;
-    height: 10em;
-    width: 10em;
-    margin-top: 10em;
-    font-size: 2em;
 }
+
+.coloursPage{
+    overflow-x: hidden;
+}
+
+.square{
+    width: 6em;
+    height: 6em;
+    border: 0.2em solid rgb(250, 2, 2);
+}
+
+.colorpicker{
+    border: 0.1em solid white;
+}
+
+#playerName{
+    background-color: white;
+}
+
+#intermediateRow, #beginnerRow, #advancedRow{
+    display: none;
+}
+.choose{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 1em;
+    color: rgb(216, 8, 8);
+    text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
+}
+
