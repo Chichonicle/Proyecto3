@@ -215,3 +215,7 @@ html, body {
 #playBtn{
     width: 50%;
 }
+
+#playerName{
+    margin-top: 2em;
+}

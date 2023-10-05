@@ -10,15 +10,3 @@ const playerName = document.getElementById('playerName');
     sessionStorage.setItem("playerName", playerName.value)
 });
 
-const colorPickers = document.querySelectorAll('.inputColours');
-const colorBall = document.querySelectorAll('.colour');
-const playBtn = document.getElementById("playBtn");
-
-playBtn.addEventListener('click', () => {
-    const arrayColorPickers = Array.from(colorPickers);
-    const gameColours = arrayColorPickers.map(element => element.value);
-    sessionStorage.setItem(colours.toString(gameColours));
-    window.location.href = './game.html';
-});
-
-
