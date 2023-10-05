@@ -12,86 +12,25 @@
 </head>
 
 <body>
-   
-    <div class="container d-flex justify-content-center align-items-end coloursPage">
-
-        <div class="row h-25">
-            <div class="choose col-12 fs-1 d-flex justify-content-center align-items-center">
-                <p>Choose colours</p>
-                <a href="./game.html" class="col-12 col-lg-6 gameButton"
-                    onclick="saveChosenColours()">Go!</a>
+    <div class="container">
+        <div class="masterMainBody colourBody row">
+            <div class="choose"><h1>Choose colours</h1></div>
+            <div id="easy" class="easy">
+                <div class="sectionColours">
+                    <div class="selectColour">
+                        <input type="color" name="colour4_1" id="colour4_1" class="inputColours" value="#ff0000">
+                        <input type="color" name="colour4_2" id="colour4_2" class="inputColours" value="#0000ff">
+                    </div>
+                </div>
+                <div class="sectionColours">
+                    <div class="selectColour">
+                        <input type="color" name="colour4_3" id="colour4_3" class="inputColours" value="#ffff00">
+                        <input type="color" name="colour4_4" id="colour4_4" class="inputColours" value="#008000">
+                    </div>
+                </div>
             </div>
+            <div class="gameButton" id="playBtn">Let the game begin</div>
         </div>
-
-        <div class="row row-cols-2" id="beginnerRow">
-            <div class="col-md-3 d-flex flex-column align-items-center p-0">
-                <div class="m-3 m-md-5 square" id="squareB1"></div>
-                <input type="color" class="colorpicker" id="B1"/>
-            </div>
-            <div class="col-md-3 d-flex flex-column align-items-center p-0">
-                <div class="m-3 m-md-5 square" id="squareB2"></div>
-                <input type="color" class="colorpicker" id="B2"/>
-            </div>
-            <div class="col-md-3 d-flex flex-column align-items-center p-0">
-                <div class="m-3 m-md-5 square" id="squareB3"></div>
-                <input type="color" class="colorpicker" id="B3"/>
-            </div>
-            <div class="col-md-3 d-flex flex-column align-items-center p-0">
-                <div class="m-3 m-md-5 square" id="squareB4"></div>
-                <input type="color" class="colorpicker" id="B4"/>
-            </div>
-        </div>
-
-        <div class="row row-cols-2 row-cols-md-5" id="intermediateRow">
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareI1"></div>
-                <input type="color" class="colorpicker" id="I1"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareI2"></div>
-                <input type="color" class="colorpicker" id="I2"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareI3"></div>
-                <input type="color" class="colorpicker" id="I3"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareI4"></div>
-                <input type="color" class="colorpicker" id="I4"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareI5"></div>
-                <input type="color" class="colorpicker" id="I5"/>
-            </div>
-        </div>
-
-        <div class="row row-cols-2 row-cols-md-6" id="advancedRow">
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA1"></div>
-                <input type="color" class="colorpicker" id="A1"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA2"></div>
-                <input type="color" class="colorpicker" id="A2"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA3"></div>
-                <input type="color" class="colorpicker" id="A3"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA4"></div>
-                <input type="color" class="colorpicker" id="A4"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA5"></div>
-                <input type="color" class="colorpicker" id="A5"/>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="m-3 m-md-5 square" id="squareA6"></div>
-                <input type="color" class="colorpicker" id="A6"/>
-            </div>
-        </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

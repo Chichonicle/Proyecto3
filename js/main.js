@@ -1,64 +1,24 @@
+const siguiente = document.getElementById('siguiente');
+const playerName = document.getElementById('playerName');
 
-const saveName = () => {
-    let name = document.getElementById("playerName").value;
-
-    if (name == "") {
-        sessionStorage.setItem("name", "Player 1");
+ siguiente.addEventListener('click', () => {
+    if (playerName.value !== "") {
+        window.location.href = './colours.html';
     } else {
-        sessionStorage.setItem("name", name);
+        alert("Escribe un nombre por favor.");
     }
-}
+    sessionStorage.setItem("playerName", playerName.value)
+});
 
+const colorPickers = document.querySelectorAll('.inputColours');
+const colorBall = document.querySelectorAll('.colour');
+const playBtn = document.getElementById("playBtn");
 
-let name = sessionStorage.getItem("playerName")
-
-
-
-const saveLevelBeginner = () => {
-    sessionStorage.setItem("level", "beginnerRow");
-    window.location.href = "./colours.html";
-}
-const saveLevelIntermediate = () => {
-    sessionStorage.setItem("level", "intermediateRow");
-    window.location.href = "./colours.html";
-}
-const saveLevelAdvanced = () => {
-    sessionStorage.setItem("level", "advancedRow");
-    window.location.href = "./colours.html";
-}
-
-let selectedLevel = sessionStorage.getItem("level");
-let selected = document.getElementById(selectedLevel);
-
-window.onload = (event) => {
-    selected.style.display = "flex";
-}
-
-window.addEventListener("load", () => startup());
-
-let colorPicker = document.getElementsByClassName("colorpicker");
-let arrayColorPicker = Array.from(colorPicker);
-let objectChosenColours = {};
-let arrayChosenColours = [];
-
-const startup = () => {
-    arrayColorPicker.map(
-        (element) => {
-            element.value = "#000000";
-            element.addEventListener("input", (event) => updateSquare(event, element));
-            element.select();
-        }
-    )
-}
-
-const updateSquare = (event, element) => {
-    let colorSquare = document.getElementById(`square${element.id}`);
-    colorSquare.style.backgroundColor = event.target.value;
-    let color = getComputedStyle(colorSquare).backgroundColor;
-    objectChosenColours[element.id] = color;
-}
-
-
-
+playBtn.addEventListener('click', () => {
+    const arrayColorPickers = Array.from(colorPickers);
+    const gameColours = arrayColorPickers.map(element => element.value);
+    sessionStorage.setItem(colours.toString(gameColours));
+    window.location.href = './game.html';
+});
 
 

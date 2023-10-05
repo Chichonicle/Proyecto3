@@ -34,13 +34,14 @@ html, body {
     background-color: rgb(216, 8, 8);
     border: 0.6em groove  rgb(216, 8, 8);
     color: rgb(10, 8, 8);
-    font-size: x-large;
+    font-size: 1.5em;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     background-image: url(../img/button.jpg);
+    margin-top: 1em;    
 }
 
 .gameButton:hover {
@@ -59,7 +60,7 @@ html, body {
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
 }
 .row {
-    margin: 0 !important;
+    margin: 0 !important;  
 }
 
 .play {
@@ -98,31 +99,119 @@ html, body {
     justify-content: end;
 }
 
-.coloursPage{
-    overflow-x: hidden;
-}
 
-.square{
-    width: 6em;
-    height: 6em;
-    border: 0.2em solid rgb(250, 2, 2);
-}
-
-.colorpicker{
-    border: 0.1em solid white;
-}
-
-#playerName{
-    background-color: white;
-}
-
-#intermediateRow, #beginnerRow, #advancedRow{
-    display: none;
-}
 .choose{
+    justify-content: center;
+    display: flex;
     font-family: 'Bungee Shade', cursive;
-    font-size: 1em;
+    font-size: 3em;
     color: rgb(216, 8, 8);
     text-shadow: 2px 2px 2px rgb(251, 3, 3), -2px -2px 2px rgb(8, 8, 2);
 }
 
+@media only screen and (max-width: 990px) {
+    html {
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    html {
+      font-size: 0.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    html {
+      font-size: 0.33em;
+    }
+  }
+
+.exit:hover {
+    cursor: pointer; 
+}
+
+.masterMainBody {
+    row-gap: 2em;
+    display: grid;
+}
+
+.easyDifficulty {
+    margin-top: 2em;
+    row-gap: 3em;
+}
+
+.sectionColours {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
+}
+
+.selectColour {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 3em;
+}
+
+.inputColour {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5em;
+}
+
+
+
+.checkBtn {
+    margin-top: 1em;
+    margin-left: .6em;
+    font-size: 1.3em;
+    height: 2em;
+    width: 10em;
+    border-radius: .5em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colourBody {
+    display: grid;
+    justify-content: center;
+}
+
+.coloursTitle {
+    align-items: center;
+    text-align: center;
+}
+
+.easyDifficulty {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectColour {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selectColour .inputColours {
+    background-color: transparent;
+    height: 6em;
+    width: 6em;
+    border: none;
+    appearance: none;
+}
+
+.selectColour .inputColours::-webkit-color-swatch {
+    border-radius: 50%;
+    appearance: none;
+    border: .2em solid white;
+}
+
+.inputColours::-moz-color-swatch {
+    border: none;
+}
+
+#playBtn{
+    width: 50%;
+}
