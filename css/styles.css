@@ -5,15 +5,19 @@
     padding: 0;
 }
 
-html, body {
-    width: auto;
-    height: 98vh;
+body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../img/saw.jpg);
-    background-size: cover;
+    /* background-image: url(../img/saw.jpg); */
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .backgroundHome {
@@ -218,4 +222,67 @@ html, body {
 
 #playerName{
     margin-top: 2em;
+}
+
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.mainboard{
+    width: 40em;
+    height: 70em;
+    border: solid 2px rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila{
+    width: 30em;
+    height: 6em;
+    border: solid 2px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0.2em;
+}
+
+.caja-bolitas{
+    width: 22em;
+    height: 6em;
+    border: solid 2px green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.caja-pistas{
+    width: 6em;
+    height: 3.5em;
+    border: solid 2px rgb(133, 26, 76);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.bolitas{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: solid 2px rgb(98, 0, 255);
+}
+.pistas{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: solid 2px rgb(255, 0, 204);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 2px;
+    margin-left: 2px;
 }
