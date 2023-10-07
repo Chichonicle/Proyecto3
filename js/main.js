@@ -7,6 +7,6 @@ const playerName = document.getElementById('playerName');
     } else {
         alert("Escribe un nombre por favor.");
     }
-    sessionStorage.setItem("playerName", playerName.value)
+    localStorage.setItem("playerName", playerName.value)
 });
 

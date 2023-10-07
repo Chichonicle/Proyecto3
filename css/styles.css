@@ -6,14 +6,14 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    /* background-image: url(../img/saw.jpg); */
-    /* background-size: cover;
+    background-image: url(../img/saw.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; */
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,33 +231,30 @@ body {
 
 .mainboard{
     width: 40em;
-    height: 70em;
+    height: 75em;
     border: solid 2px rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 4em;
+    margin-top: 2em;
+    background-color: rgba(0, 0, 0, 0.849);
+    
 }
 
-.fila{
+.caja{
     width: 30em;
     height: 6em;
-    border: solid 2px red;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0.2em;
+    border-radius: 1em;
+    align-items: center;
+    background-color: rgba(174, 46, 46, 0.361);
 }
 
-.caja-bolitas{
-    width: 22em;
-    height: 6em;
-    border: solid 2px green;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 .caja-pistas{
     width: 6em;
     height: 3.5em;
@@ -265,24 +262,101 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 15px;
+    background-color: #d05da268;
+    border-radius: 0.5em;
 }
 
 .bolitas{
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    border: solid 2px rgb(98, 0, 255);
+    border: solid 2px rgb(4, 0, 9);
 }
 .pistas{
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: solid 2px rgb(255, 0, 204);
+    border: solid 2px rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     margin-right: 2px;
-    margin-left: 2px;
+    margin-left: 3px;
+    background-color: transparent;
 }
+
+.combsecreta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 10em;
+    background-color:transparent;
+    border-radius: 0.625em;
+  }
+  
+  .combsecreta > span {
+    width: 1.4em;
+    height: 1.4em;
+    margin: 0 0.625em;
+    border-radius: 1.25em;
+    border: 0.0625em solid black;
+    display: none;
+  }
+
+  .bajo > span {
+    width: 1.6875em;
+    height: 1.6875em;
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+    border: 0.2em solid #000000;
+    border-radius: 1.25em;
+    margin-top: 2em;
+  }
+  
+  .bajo > span:hover {
+    cursor: pointer;
+  }
+  
+  .bajo > span:active {
+    transform: scale(1.2);
+  }
+  
+  #aceptar1 {
+    width: 4em;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #7cb342;
+    user-select: none;
+  }
+  
+  #borrar1 {
+    width: 4em;
+    display: grid;
+    place-items: center;
+    font-weight: bolder;
+    background-color: white;
+    user-select: none;
+  }
+  .bajo{
+    width: 30em;
+    height: 6em;
+    border: solid 2px rgb(255, 255, 253);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.2em;
+    border-radius: 1em;
+    background-color: rgba(189, 192, 89, 0.758);
+}
+
+.partesuperior {
+    margin-top: 1.2em;
+    border-bottom: 0.125em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1.25em;
+    border-top-right-radius: 1.25em;
+  }
