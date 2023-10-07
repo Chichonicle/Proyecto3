@@ -65,3 +65,27 @@ document.querySelector("#aceptar1").addEventListener("click", () => {
   } else {
   }
 });
+
+function bloquearFilaActual() {
+    const elementosFila = document.querySelectorAll(`.fila-${filaActual}`);
+    elementosFila.forEach((elemento) => {
+      elemento.style.pointerEvents = "none";
+    });
+  }
+
+  function pasarSiguienteFila() {
+    filaActual++;
+    const maxFilasVisible = maxFilas;
+    if (filaActual > maxFilasVisible) {
+      window.location.href = "../pages/loser.html";
+      return;
+    }
+  
+    elementosFilaActual = document.querySelectorAll(`.fila-${filaActual}`);
+    elementosFilaActual.forEach((elemento) => {
+      elemento.style.pointerEvents = "auto";
+    });
+    indiceElementoActual = 0;
+  }
+  
+  
