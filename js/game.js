@@ -12,3 +12,13 @@ function generarCombinacionSecreta() {
 }
 generarCombinacionSecreta()
 
+let coloresSecretosHTMLElements = document.querySelectorAll(".combsecreta .color-secreto");
+let coloresSecretosHTMLElementsArray = Array.from(coloresSecretosHTMLElements);
+coloresSecretosHTMLElementsArray.forEach((spanColor, index) => {
+  spanColor.style.backgroundColor = combinacionSecreta[index];
+});
+
+const coloresSeleccionados = document.querySelectorAll(".color-seleccionado");
+coloresSeleccionados.forEach((spanColor, index) => {
+  spanColor.style.backgroundColor = colores[index];
+});
