@@ -112,9 +112,9 @@ function bloquearFilaActual() {
     }
   
     if (coincidenColoresPosicion === coloresFila.length) {
-      window.location.href = "winner.html";
-    } else {
-      console.log("La combinacion no es correcta.");
+      const winnerName = sessionStorage.getItem("gameName");
+      window.location.href = `../pages/winner.html?name=${winnerName}`;
+
     }
   }
   
