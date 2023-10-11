@@ -22,6 +22,7 @@ const coloresSeleccionados = document.querySelectorAll(".color-seleccionado");
 coloresSeleccionados.forEach((spanColor, index) => {
   spanColor.style.backgroundColor = colores[index];
 });
+
 const botones = document.querySelectorAll(".color-seleccionado");
 let elementosFilaActual = document.querySelectorAll(`.fila-${filaActual}`);
 const elementosPintados = new Set();
@@ -37,7 +38,6 @@ botones.forEach((boton) => {
 
     elementosFilaActual[indiceElementoActual].style.backgroundColor = colorSeleccionado;
     elementosPintados.add(elementosFilaActual[indiceElementoActual]);
-
     indiceElementoActual++;
 
     if (indiceElementoActual === elementosFilaActual.length) {
@@ -51,7 +51,6 @@ botonBorrar.addEventListener("click", () => {
   if (elementosPintados.size > 0) {
     const ultimoElementoPintado = elementosFilaActual[indiceElementoActual - 1];
     ultimoElementoPintado.style.backgroundColor = "";
-
     elementosPintados.delete(ultimoElementoPintado);
     indiceElementoActual--;
   }
@@ -91,9 +90,7 @@ function bloquearFilaActual() {
   function compararCombinacion() {
     const fila = document.querySelectorAll(`.fila-${filaActual}`);
     const coloresFila = Array.from(fila).map((elemento) => elemento.style.backgroundColor);
-  
     const coloresSecretos = coloresSecretosHTMLElementsArray.map((elemento) => elemento.style.backgroundColor);
-  
     let coincidenColoresPosicion = 0;
     let coincidenColores = 0;
   
